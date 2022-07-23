@@ -25,23 +25,24 @@ nav{
     background: white;
     border: 1px solid #c8c8c8;
     border-radius: 20px;
+    box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.22);
 }
 .navbar-item {
     color: var(--gray-font-color);
     margin: 5px;
 }
 .navbar-item .text{
-    font-size: 14px;
+    font-size: 12px;
 }
 .navbar-item .icon{
     margin: 3px 0;
 }
 .fa-solid{
-    font-size: 25px;
+    font-size: 23px;
 }
 .bangs{
     width: 100%;
-    height: 40px;
+    height: 10px;
 }
 .header{
     display: flex;
@@ -51,13 +52,13 @@ nav{
 .header h1{
     font-size: 28px;
     font-weight: 600;
-    padding-left: 15px;
+    padding-left: 25px;
     color: var(--gray-font-color);
 }
 .header .user-photo{
     padding-right: 25px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 .header .user-photo img{
     border-radius: 200px;
