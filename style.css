@@ -136,12 +136,12 @@ ul{
     background: var(--gray-color);
     width: 80%;
 }
-.sign-in{
+.sign-in-btn{
     position: relative;
     color: white;
     background-color: var(--deepgray-color);
 }
-.sign-in::after{
+.sign-in-btn::after{
     content: '已有帳號';
     position: absolute;
     top: -35px;
@@ -149,12 +149,16 @@ ul{
     font-size: 16px;
     color: var(--deepgray-color);
 }
-.sign-up{
+.sign-up-btn{
     background: none;
     border: 1px solid;
     border-color: var(--deepgray-color);
     box-shadow: var(--trait-box-shadow);
 }
+.sign-up-btn a{
+    color: var(--deepgray-color);
+}
+
 .choose-sign{
     width: 80%;
     margin: 0 auto;
@@ -195,11 +199,13 @@ ul{
     padding: 0 0px;
 }
 .next-step{
-    position: fixed;
-    bottom: 15px;
-    right: 20px;
+    text-align: right;
+    margin: 0 auto 0 auto;
 }
 .next-step .round{
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
     width: 40px;
     height: 40px;
     border: 3px solid black;
@@ -215,7 +221,7 @@ ul{
     font-size: 30px;
     line-height: 40px;
 }
-.sign-up-h1 h1{
+.sign-up-choose h1{
     text-align: center;
     font-size: 35px;
     font-weight: 600;
@@ -223,7 +229,7 @@ ul{
 .sing-up-process{
     display: flex;
     text-align: center;
-    margin: 20px auto 20px;
+    margin: 20px auto 40px;
     justify-content: center;
 }
 .sing-up-process-step{
@@ -260,10 +266,10 @@ ul{
     font-size: 14px;
     color: var(--deepgray-color);
 }
-.sing-up-process-step1 .number{
+.sing-up-process-choose-step1 .number{
     background: #000;
 }
-.sing-up-process-step1 .text{
+.sing-up-process-choose-step1 .text{
     color: #000;
 }
 .sign-up-h2 h2{
@@ -289,7 +295,7 @@ ul{
 .choose-user-box{
     display: flex;
     flex-wrap: wrap;
-    margin: 10px 0 0;
+    margin: 15px 0 0;
 }
 .choose-user{
     margin: 10px auto;
