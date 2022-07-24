@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 
 :root{
-    --gray-color: #A3A3A3;
+    --gray-color: #cdcdcd;
     --deepgray-color: #555555;
     --trait-box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.22);
     --f2f2f2-color: #f2f2f2;
@@ -9,6 +9,7 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 body{
     font-family: 'Noto Sans TC', sans-serif;
@@ -191,3 +192,121 @@ ul{
     margin: 0 30px;
     padding: 0 4px;
 }
+.next-step{
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+}
+.next-step .round{
+    width: 50px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 200px;
+    background: #fff;
+}
+.next-step .arrow{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.arrow .fa-arrow-right{
+    font-size: 35px;
+    line-height: 50px;
+}
+.sign-up-h1 h1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+.sing-up-process{
+    display: flex;
+    text-align: center;
+    margin: 20px auto 20px;
+    justify-content: center;
+}
+.sing-up-process-step{
+    width: 60px;
+    margin: 0 8px;
+    position: relative;
+}
+.sing-up-process-step::after{
+    content: '';
+    width: 54px;
+    height: 7px;
+    position: absolute;
+    top: 14px;
+    left: 40px;
+    background-color: var(--gray-color);
+    z-index: -1;
+}
+.sing-up-process-step4::after{
+    display: none;
+}
+.sing-up-process-step .number{
+    background-color: var(--gray-color);
+    color: var(--f2f2f2-color);
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 200px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.sing-up-process-step .text{
+    font-size: 14px;
+    color: var(--deepgray-color);
+}
+.sing-up-process-step1 .number{
+    background: #000;
+}
+.sing-up-process-step1 .text{
+    color: #000;
+}
+.sign-up-h2 h2{
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 40px;
+    color: var(--deepgray-color);
+}
+.choose-user .photo{
+    width: 110px;
+    height: 110px;
+    line-height: 110px;
+    border-radius: 200px;
+    background-color: var(--gray-color);
+    text-align: center;
+}
+.choose-user .photo img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.choose-user-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 0;
+}
+.choose-user{
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.choose-user .text{
+    width: 180px;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.choose-user .text h3{
+    font-size: 22px;
+    font-weight: 500;
+}
+.choose-user .text p{
+    font-size: 16px;
+    text-align:justify;
+}
+
+
+
