@@ -198,8 +198,8 @@ ul{
     right: 20px;
 }
 .next-step .round{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border: 3px solid black;
     border-radius: 200px;
     background: #fff;
@@ -210,8 +210,8 @@ ul{
     height: 100%;
 }
 .arrow .fa-arrow-right{
-    font-size: 35px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
 }
 .sign-up-h1 h1{
     text-align: center;
@@ -265,7 +265,7 @@ ul{
     color: #000;
 }
 .sign-up-h2 h2{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     padding-left: 40px;
     color: var(--deepgray-color);
@@ -293,9 +293,10 @@ ul{
     margin: 10px auto;
     display: flex;
     flex-wrap: nowrap;
+    height: 120px;
 }
 .choose-user .text{
-    width: 180px;
+    width: 200px;
     padding-left: 15px;
     padding-top: 5px;
 }
