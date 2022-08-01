@@ -3,6 +3,7 @@
 :root{
     --gray-color: #cdcdcd;
     --deepgray-color: #555555;
+    --black-color: #000;
     --trait-box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.22);
     --f2f2f2-color: #f2f2f2;
 }
@@ -328,3 +329,57 @@ ul{
 .sing-up-process-phone-step1::after{
     background: #000;
 }
+.form{
+    box-sizing: border-box;
+    margin: 30px auto 20px;
+    position: relative;
+    width: 80%;
+    height: 60px;
+}
+.form .form-input{
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border: 1.5px solid;
+    border-color: var(--deepgray-color);
+    border-radius: 10px;
+    font-size: 20px;
+    outline: none;
+    padding: 15px;
+    background: #fff;
+}
+.form .form-input:focus{
+    outline: 1px solid;
+    outline-color: var(--black-color);
+    border-color: var(--black-color);
+}
+.form .form-label{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 18px;
+    cursor: text;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+    z-index: 100;
+}
+.form .form-label::after{
+    content: '';
+    position: absolute;
+    left: -5px;
+    bottom: 0;
+    width: 65px;
+    height: 11.5px;
+    background: #fff;
+    z-index: -1;
+}
+
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label{
+    top: -10px;
+    font-size: 14px;
+    left: 20px;
+}
+
