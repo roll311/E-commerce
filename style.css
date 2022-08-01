@@ -353,11 +353,13 @@ ul{
     background: #fff;
 }
 .form .form-input:focus{
+    -webkit-appearance: none; 
     outline: 1px solid;
     outline-color: var(--black-color);
     border-color: var(--black-color);
 }
 .form .form-label{
+    -webkit-appearance: none; 
     position: absolute;
     top: 15px;
     left: 20px;
@@ -379,6 +381,7 @@ ul{
 
 .form-input:focus ~ .form-label,
 .form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label{
+    -webkit-appearance: none; 
     top: -10px;
     font-size: 14px;
     left: 20px;
