@@ -2,6 +2,7 @@
 
 :root{
     --gray-color: #cdcdcd;
+    --white-color: #fff;
     --deepgray-color: #555555;
     --black-color: #000;
     --trait-box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.22);
@@ -379,7 +380,6 @@ ul{
     background: #fff;
     z-index: -1;
 }
-
 .form-input:focus ~ .form-label,
 .form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label{
     -webkit-appearance: none; 
@@ -387,4 +387,18 @@ ul{
     font-size: 14px;
     left: 20px;
 }
-
+.btn-box{
+    text-align: right;
+}
+.send-number-btn{
+    background: var(--deepgray-color);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: var(--white-color);
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
