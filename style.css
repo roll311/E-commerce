@@ -357,6 +357,7 @@ ul{
     /* outline: 1px solid;
     outline-color: var(--black-color); */
     border-color: var(--black-color);
+    border: 2.5px solid;
 }
 .form .form-label{
     -webkit-appearance: none; 
