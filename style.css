@@ -354,8 +354,8 @@ ul{
 }
 .form .form-input:focus{
     -webkit-appearance: none; 
-    outline: 1px solid;
-    outline-color: var(--black-color);
+    /* outline: 1px solid;
+    outline-color: var(--black-color); */
     border-color: var(--black-color);
 }
 .form .form-label{
