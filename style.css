@@ -202,7 +202,7 @@ ul{
 }
 .next-step{
     text-align: right;
-    margin: 0 auto 0 auto;
+    margin: 60px auto 0 auto;
 }
 .next-step .round{
     display: inline-block;
@@ -355,8 +355,6 @@ ul{
 }
 .form .form-input:focus{
     -webkit-appearance: none; 
-    /* outline: 1px solid;
-    outline-color: var(--black-color); */
     border-color: var(--black-color);
     border: 2.5px solid;
 }
@@ -367,18 +365,9 @@ ul{
     left: 20px;
     font-size: 18px;
     cursor: text;
-    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in ;
     z-index: 100;
-}
-.form .form-label::after{
-    content: '';
-    position: absolute;
-    left: -5px;
-    bottom: 0;
-    width: 65px;
-    height: 12px;
-    background: #fff;
-    z-index: -1;
+    color: var(--gray-color);
 }
 .form-input:focus ~ .form-label,
 .form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label{
@@ -386,6 +375,8 @@ ul{
     top: -10px;
     font-size: 14px;
     left: 20px;
+    color: var(--deepgray-color);
+    background:linear-gradient(180deg, #f2f2f2 50%, #fff 50%);
 }
 .btn-box{
     text-align: right;
@@ -393,12 +384,12 @@ ul{
 .send-number-btn{
     background: var(--deepgray-color);
     border: none;
-    border-radius: 20px;
-    padding: 10px 15px;
+    border-radius: 30px;
+    padding: 12px 15px;
     font-size: 16px;
     color: var(--white-color);
     font-weight: 400;
     letter-spacing: 1px;
     margin-right: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
