@@ -76,67 +76,18 @@ ul{
     font-size: 22px;
     line-height: 40px;
 }
-.welcome{
-    width: 100%;
-    height: 380px;
-    line-height: 380px;
+.sign-btn-box{
     text-align: center;
-    font-weight: 400;
-    position: relative;
-}
-.welcome .round{
-    border-radius: 200px;
-    position: absolute;
-    z-index: -1;
-}
-.welcome .round1{
-    width: 200px;
-    height: 200px;
-    background-color:var(--gray-color) ;
-    opacity: .4;
-    top: 50px;
-    left: 40px;
-}
-.welcome .round2{
-    width: 170px;
-    height: 170px;
-    background-color:var(--gray-color) ;
-    opacity: .2;
-    top: 50px;
-    left: 180px;
-}
-.welcome .round3{
-    width: 130px;
-    height: 130px;
-    background-color:var(--gray-color) ;
-    opacity: .3;
-    top: 150px;
-    left: 220px;
-}
-.welcome .round4{
-    width: 160px;
-    height: 160px;
-    background-color:var(--gray-color) ;
-    opacity: .15;
-    top: 150px;
-    left: 80px;
-}
-.welcome h1{
-    font-size: 35px;
-    font-weight: 600;
-    z-index: 100;
-    color: black;
-}
-.sign-in-up{
-    font-size: 20px;
-    text-align: center;
+    margin-top: 55px;
 }
 .sign-btn{
-    margin: 20px auto;
+    font-size: 18px;
+    margin: 10px auto;
     border-radius: 20px;
     padding: 12px 0;
     background: var(--gray-color);
     width: 80%;
+    border: none;
 }
 .sign-in-btn{
     position: relative;
@@ -156,19 +107,14 @@ ul{
     border: 1px solid;
     border-color: var(--deepgray-color);
     box-shadow: var(--trait-box-shadow);
-}
-.sign-up-btn a{
-    color: var(--deepgray-color);
-}
-
+} 
 .choose-sign{
     width: 80%;
-    margin: 0 auto;
+    margin: 15px auto 5px;
     text-align: center;
 }
 .choose-sign .text-box{
     position: relative;
-    margin-top: 30px;
 }
 .choose-sign .text-box .text{
     font-size: 17px;
@@ -187,47 +133,39 @@ ul{
 }
 .choose-sign-btn{
     display: flex;
-    width: 60%;
-    margin: 5px auto;
+    width: 55%;
+    margin: 0px auto;
     justify-content: space-around;
 }
 .choose-icon{
     display: block;
     text-align: center;
     color: var(--deepgray-color);
-    font-size: 35px;
-    width: 35px;
-    margin: 0 0px;
-    padding: 0 0px;
+    font-size: 32px;
+    width: 32px;
+}
+.next-step-box{
+    margin: 0px auto 20px;
+    padding-right: 40px;
+    text-align: right;
 }
 .next-step{
-    text-align: right;
-    margin: 60px auto 0 auto;
-}
-.next-step .round{
-    display: inline-block;
-    margin-right: 15px;
-    margin-bottom: 10px;
-    width: 40px;
-    height: 40px;
-    border: 3px solid black;
     border-radius: 200px;
-    background: #fff;
+    border: 3px solid var(--deepgray-color);
+    background-color: var(--white-color);
+    width: 50px;
+    height: 50px;
 }
-.next-step .arrow{
-    text-align: center;
-    width: 100%;
-    height: 100%;
+.next-step-box .arrow{
 }
-.arrow .fa-arrow-right{
-    color: #000;
+.next-step-box .arrow .fa-arrow-right{
+    color: var(--deepgray-color);
     font-size: 30px;
-    line-height: 40px;
 }
 .sign-up h1{
     text-align: center;
-    font-size: 35px;
-    font-weight: 600;
+    font-size: 28px;
+    font-weight: 500;
 }
 .sing-up-process{
     display: flex;
@@ -288,12 +226,14 @@ ul{
     border-radius: 200px;
     background-color: var(--gray-color);
     text-align: center;
+    -webkit-filter:grayscale(1);
 }
 .choose-user .photo img{
     width: 80%;
     height: 80%;
     object-fit: cover;
     vertical-align: middle;
+    -webkit-filter:grayscale(1);
 }
 .choose-user-box{
     display: flex;
@@ -312,7 +252,7 @@ ul{
     padding-top: 5px;
 }
 .choose-user .text h3{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
 }
 .choose-user .text p{
@@ -392,4 +332,27 @@ ul{
     letter-spacing: 1px;
     margin-right: 50px;
     margin-bottom: 20px;
+}
+.commercial-img{
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+    -webkit-filter:grayscale(90%);
+
+}
+.commercial-img img{
+    width: 100%;
+    height: 100%;
+}
+.welcome{
+    margin: 20px auto 0;
+    text-align: center;
+}
+.welcome h1{
+    font-weight: 500;
+    font-size: 26px;
+}
+.blank-box{
+    height: 40px;
+    width: 100%;
 }
