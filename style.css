@@ -219,35 +219,49 @@ ul{
     padding-left: 40px;
     color: var(--deepgray-color);
 }
-.choose-user .photo{
+.choose-user-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px auto;
+}
+.choose-user{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 10px auto;
+    height: 120px;
+}
+.choose-user-label{
+    position: relative;
+    margin: 0 auto;
+}
+.choose-user-box .user-photo{
     width: 110px;
     height: 110px;
     line-height: 110px;
     border-radius: 200px;
     background-color: var(--gray-color);
     text-align: center;
-    -webkit-filter:grayscale(1);
+    border: 3px solid transparent;
 }
-.choose-user .photo img{
-    width: 80%;
-    height: 80%;
+.choose-user-box .user-photo img{
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     vertical-align: middle;
     -webkit-filter:grayscale(1);
 }
-.choose-user-box{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 15px 0 0;
+.choose-user-label .checkbox{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    opacity: 0;
 }
-.choose-user{
-    margin: 10px auto;
-    display: flex;
-    flex-wrap: nowrap;
-    height: 120px;
+.choose-user-label .checkbox:checked ~ .choose-user > .user-photo{
+    border-color: var(--black-color);
 }
 .choose-user .text{
-    width: 200px;
+    width: 180px;
     padding-left: 15px;
     padding-top: 5px;
 }
