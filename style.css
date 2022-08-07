@@ -5,6 +5,7 @@
     --white-color: #fff;
     --deepgray-color: #555555;
     --black-color: #000;
+    --middle-gray-color: #757575;
     --trait-box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.22);
     --f2f2f2-color: #f2f2f2;
 }
@@ -200,12 +201,20 @@ ul{
     font-size: 18px;
     font-weight: 500;
     padding-left: 40px;
+    margin-bottom: 20px;
     color: var(--deepgray-color);
+}
+.sign-up-h3 h3{
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    color: var(--middle-gray-color);
 }
 .choose-user-box{
     display: flex;
     flex-wrap: wrap;
-    margin: 15px auto;
+    margin: 0 auto 15px;
 }
 .choose-user{
     display: flex;
@@ -257,11 +266,19 @@ ul{
     text-align:justify;
 }
 .sing-up-process-phone-step1 .number,
-.sing-up-process-phone-step2 .number{
+.sing-up-process-phone-step2 .number,
+.sing-up-process-basic-step1 .number,
+.sing-up-process-basic-step2 .number,
+.sing-up-process-basic-step3 .number,
+.sing-up-process-basic-step1::after,
+.sing-up-process-basic-step2::after{
     background: #000;
 }
 .sing-up-process-phone-step1 .text,
-.sing-up-process-phone-step2 .text{
+.sing-up-process-phone-step2 .text,
+.sing-up-process-basic-step1 .text,
+.sing-up-process-basic-step2 .text,
+.sing-up-process-basic-step3 .text{
     color: #000;
 }
 .sing-up-process-phone-step1::after{
@@ -269,7 +286,7 @@ ul{
 }
 .form{
     box-sizing: border-box;
-    margin: 30px auto 20px;
+    margin: 0px auto 20px;
     position: relative;
     width: 80%;
     height: 60px;
@@ -375,4 +392,18 @@ ul{
 .next-step-box .arrow .fa-arrow-right{
     color: var(--deepgray-color);
     font-size: 30px;
+}
+.agree-check-box{
+    background: red;
+    margin: 40px auto 0;
+    padding-left: 50px;
+}
+.agree-check{
+    width: 30px;
+    height: 30px;
+}
+.agree-check-box p{
+    font-size: 18px;
+    display: inline-block;
+    padding-left: 10px;
 }
