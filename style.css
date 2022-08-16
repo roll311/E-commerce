@@ -16,8 +16,7 @@
 }
 body{
     font-family: 'Noto Sans TC', sans-serif;
-    background: #f2f2f2;
-}
+    background: #f2f2f2;}
 nav{
     position:fixed;
     bottom: 13px;
@@ -306,22 +305,51 @@ ul{
     outline: none;
     padding: 15px;
     background: #fff;
+    padding-left: 65px;
 }
 .form .form-input:focus{
     -webkit-appearance: none; 
     border-color: var(--black-color);
     border: 2.5px solid;
 }
+.form::after{
+    content: '';
+    font: var(--fa-font-solid);
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    font-size: 24px;
+    color: var(--middle-gray-color);
+}
+.phone-number-icon::after{
+    content: '\f3cd';
+    left: 24px;
+}
+.captcha-icon::after{
+    content: '\e4e8';
+}
+.user-name-icon::after{
+    content: '\f2bb';
+}
+.account-number-icon::after{
+    content: '\f007';
+}
+.password-icon::after{
+    content: '\f023';
+}
+.mail-icon::after{
+    content: '\f0e0';
+}
 .form .form-label{
     -webkit-appearance: none; 
     position: absolute;
     top: 15px;
-    left: 20px;
+    left: 60px;
     font-size: 18px;
     cursor: text;
     transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in ;
     z-index: 100;
-    color: var(--gray-color);
+    color: var(--deepgray-color);
 }
 .form-input:focus ~ .form-label,
 .form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label{
@@ -394,16 +422,49 @@ ul{
     font-size: 30px;
 }
 .agree-check-box{
-    background: red;
-    margin: 40px auto 0;
-    padding-left: 50px;
-}
-.agree-check{
-    width: 30px;
-    height: 30px;
+    padding-left: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
 }
 .agree-check-box p{
-    font-size: 18px;
     display: inline-block;
-    padding-left: 10px;
+    font-size: 20px;
+    line-height: 40px;
+    padding-left: 45px;
+}
+input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    border: 3px solid var(--middle-gray-color) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+}
+input[type="checkbox"]:checked{
+    border-color: var(--black-color);
+}
+input[type="checkbox"]::after{
+    content: '\f00c';
+    font: var(--fa-font-solid);
+    font-weight: 900;
+    font-size: 22px;
+    display: none;
+    color: var(--black-color);
+}
+input[type="checkbox"]:checked::after{
+    display: block;
+}
+
+.agree-check{
+    margin-bottom: 10px;
+    position: relative;
 }
