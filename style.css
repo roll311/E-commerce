@@ -472,7 +472,7 @@ input[type="checkbox"]:checked::after{
     position: relative;
 }
 .like-icon{
-    margin: 100px auto 150px;
+    margin: 80px auto 170px;
     width: 100%;
     text-align: center;
 }
@@ -555,7 +555,6 @@ input[type="checkbox"]:checked::after{
     transform: rotate(0deg);
     } 
 }
-
 @keyframes thumbs-up {
     25% {
     transform: rotate(20deg);
@@ -564,4 +563,18 @@ input[type="checkbox"]:checked::after{
     100% {
     transform: rotate(5deg);
     }
+}
+.next-step-before{
+    position: relative;
+}
+.next-step-before::before{
+    content: '前往登入賣場';
+    color: var(--deepgray-color);
+    font-size: 22px;
+    position: absolute;
+    top: 9px;
+    right: 50px;
+    display: inline-block;
+    width: 150px;
+    font-weight: 400;
 }
