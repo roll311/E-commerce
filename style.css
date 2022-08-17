@@ -270,14 +270,18 @@ ul{
 .sing-up-process-basic-step2 .number,
 .sing-up-process-basic-step3 .number,
 .sing-up-process-basic-step1::after,
-.sing-up-process-basic-step2::after{
+.sing-up-process-basic-step2::after,
+.sing-up-process-done-step3::after,
+.sing-up-process-done-step3 .number,
+.sing-up-process-done-step4 .number{
     background: #000;
 }
 .sing-up-process-phone-step1 .text,
 .sing-up-process-phone-step2 .text,
 .sing-up-process-basic-step1 .text,
 .sing-up-process-basic-step2 .text,
-.sing-up-process-basic-step3 .text{
+.sing-up-process-basic-step3 .text,
+.sing-up-process-done-step4 .text{
     color: #000;
 }
 .sing-up-process-phone-step1::after{
@@ -463,8 +467,101 @@ input[type="checkbox"]::after{
 input[type="checkbox"]:checked::after{
     display: block;
 }
-
 .agree-check{
     margin-bottom: 10px;
     position: relative;
+}
+.like-icon{
+    margin: 100px auto 150px;
+    width: 100%;
+    text-align: center;
+}
+.like-bg{
+    display: inline-block;
+    background: var(--deepgray-color);
+    width: 120px;
+    height: 120px;
+    border-radius: 200px;
+    position: relative;
+}
+.like-bg::after{
+    position: absolute;
+    content: '恭喜\A註冊完成';
+    font-weight: 500;
+    white-space:pre;
+    left: -20px;
+    bottom: -130px;
+    font-size: 40px;
+}
+.hand,.thumb{
+    position: relative;
+}
+.hand::after,.thumb::after,
+.hand::before,.thumb::before{
+    position: absolute;
+    content: '';
+}
+.hand{
+    left: 25px;
+    top: 50px;
+    width: 20px;
+    height: 40px;
+    background: #fff;
+    border-radius: 5px;
+    z-index: 0;
+    animation: hands-up 2s linear infinite;
+}
+.hand::before{
+    left: 28px;
+    top: 28px;
+        width: 40px;
+        background: inherit;
+        height: 10px;
+        border-radius: 2px 10px 10px 2px;
+        box-shadow: 1px -9px 0 1px #fff,
+        2px -19px 0 2px #fff, 3px -29px 0 3px #fff;
+}
+.thumb {
+    border-bottom: 20px solid #fff;
+    border-left: 20px solid transparent;
+    top: -22px;
+    right: -28px;
+    z-index: 2;
+    transform: rotate(5deg);
+    transform-origin: 0% 100%;
+    animation: thumbs-up 2s linear infinite;
+}
+.thumb::before {
+    border-radius: 50% 50% 0 0;
+	background: #fff;
+    width: 10px;
+    height: 12px;
+    left: -9.5px;
+    top: -8px;
+    transform: rotate(-15deg);
+    transform-origin: 100% 100%;
+    box-shadow: -1px 4px 0 -1px #fff;
+}
+
+@keyframes hands-up {
+    25% {
+    transform: rotate(15deg);
+    }
+    50% {
+    transform: rotate(-15deg) translateY(-10px);
+    }
+    75%,
+    100% {
+    transform: rotate(0deg);
+    } 
+}
+
+@keyframes thumbs-up {
+    25% {
+    transform: rotate(20deg);
+    }
+    50%,
+    100% {
+    transform: rotate(5deg);
+    }
 }
