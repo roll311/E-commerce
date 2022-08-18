@@ -150,6 +150,13 @@ ul{
     font-size: 28px;
     font-weight: 500;
 }
+.sign-in h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin: 10px auto 30px;
+}
 .sing-up-process{
     display: flex;
     text-align: center;
@@ -289,7 +296,7 @@ ul{
 }
 .form{
     box-sizing: border-box;
-    margin: 0px auto 20px;
+    margin: 0px auto 25px;
     position: relative;
     width: 80%;
     height: 60px;
@@ -358,8 +365,8 @@ ul{
 .form-input:focus ~ .form-label,
 .form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label{
     -webkit-appearance: none; 
-    top: -10px;
-    font-size: 14px;
+    top: -12px;
+    font-size: 16px;
     left: 20px;
     color: var(--deepgray-color);
     background:linear-gradient(180deg, #f2f2f2 50%, #fff 50%);
@@ -378,6 +385,7 @@ ul{
     letter-spacing: 1px;
     margin-right: 50px;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 .commercial-img{
     width: 300px;
@@ -522,10 +530,10 @@ input[type="checkbox"]:checked::after{
         2px -19px 0 2px #fff, 3px -29px 0 3px #fff;
 }
 .thumb {
-    border-bottom: 20px solid #fff;
+    border-bottom: 20px solid rgb(255, 255, 255);
     border-left: 20px solid transparent;
-    top: -22px;
-    right: -28px;
+    top: -23px;
+    right: -28.8px;
     z-index: 2;
     transform: rotate(5deg);
     transform-origin: 0% 100%;
@@ -533,16 +541,15 @@ input[type="checkbox"]:checked::after{
 }
 .thumb::before {
     border-radius: 50% 50% 0 0;
-	background: #fff;
+	background: rgb(255, 255, 255);
     width: 10px;
     height: 12px;
-    left: -9.5px;
-    top: -8px;
-    transform: rotate(-15deg);
+    left: -10px;
+    top: -4px;
+    transform: rotate(3deg);
     transform-origin: 100% 100%;
-    box-shadow: -1px 4px 0 -1px #fff;
+    box-shadow: -1px 5px 0 -1px rgb(255, 255, 255);
 }
-
 @keyframes hands-up {
     25% {
     transform: rotate(15deg);
@@ -578,3 +585,49 @@ input[type="checkbox"]:checked::after{
     width: 150px;
     font-weight: 400;
 }
+.sign-in-icon-box{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.sign-in-icon{
+    margin: 10px auto;
+    width: 80%;
+    background: var(--white-color);
+    font-size: 20px;
+    padding: 12px 0px;
+    border-radius: 10px;
+    position: relative;
+}
+.sign-in-icon::before{
+    content: '';
+    position: absolute;
+    font-size: 27px;
+    top: 12px;
+    left: 40px;
+    font-family: 'Font Awesome 5 Brands';
+}
+.sign-in-icon-google::before{
+    content: '\f1a0';
+}
+.sign-in-icon-facebook::before{
+    content: '\f082';
+    font-size: 30px;
+    top: 10px;
+}
+.sign-in-icon-apple::before{
+    content: '\f179';
+    font-size: 32px;
+    top: 8px;
+    left: 41.5px;
+}
+.sign-in-icon-apple{
+    border: 1px solid var(--black-color);
+}
+.sign-in-icon p{
+    padding-left: 60px;
+    font-weight: 500;
+}
+
